@@ -1,0 +1,81 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #F6F7FF;
+}
+.cadre{
+  width: 100%;
+  padding: 2rem;
+  margin-top: 2rem;
+  justify-content: center;
+}
+.menuBurger{
+  background-color: #4A64E7;
+  position: fixed;
+  color: #FFF;
+  width: 22%;
+}
+.photo{
+  height: 9vh;
+  width: 6rem;
+  border: 3px solid #FFF;
+  margin: 1rem;
+}
+.nom{
+  margin: 0 1rem;
+}
+.menuBurger h1{
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+.point{
+  color: #FF5959;
+  font-size: 2rem;
+}
+.sticker i{
+  font-size: 1.1rem;
+}
+.sticker{
+  margin: 1rem 0;
+  padding: .2rem 1rem;
+}
+.stickers{
+  margin-top: 2rem;
+}
+.sticker span{
+  margin: 0 1rem;
+  font-size: .8rem;
+}
+.couleur{
+  border-left: 3px solid #FF5959;
+}
+.moi{
+  width: 60%;
+  margin: 5rem auto;
+  border: #4A64E7;
+}
+.liens{
+  display: flex;
+  justify-content: space-between;
+}
+.menuBurger a{
+  text-decoration: none;
+  color: #FFF;
+}
+
+
+
+
+
+
+
+@media (max-width: 880px) {
+  .menuBurger{
+    position: relative;
+    width: 100%;
+  }
+  
+}
