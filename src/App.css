@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
 *{
   margin: 0;
   padding: 0;
@@ -16,7 +18,9 @@ body{
   background-color: #4A64E7;
   position: fixed;
   color: #FFF;
-  width: 22%;
+  width: 14%;
+  border-radius: 2rem;
+  margin-left: 11rem;
 }
 .photo{
   height: 9vh;
@@ -25,7 +29,7 @@ body{
   margin: 1rem;
 }
 .nom{
-  margin: 0 1rem;
+  margin: 0 0.7rem;
 }
 .menuBurger h1{
   font-size: 1.6rem;
@@ -47,15 +51,16 @@ body{
 }
 .sticker span{
   margin: 0 1rem;
-  font-size: .8rem;
+  font-weight: bold;
+  font-size: .9rem;
 }
 .couleur{
   border-left: 3px solid #FF5959;
 }
 .moi{
-  width: 60%;
-  margin: 5rem auto;
-  border: #4A64E7;
+  width: 65%;
+  margin: 10rem auto;
+  background-color: #FF5959;
 }
 .liens{
   display: flex;
@@ -78,4 +83,27 @@ body{
     width: 100%;
   }
   
+}
+@media (max-width: 1860px) {
+  .menuBurger{
+    margin-left: 9rem;
+    width: 15%;
+  }
+}
+@media (max-width: 1630px) {
+  .menuBurger{
+    margin-left: 7rem;
+    width: 15%;
+  }
+}
+@media (max-width: 1280px) {
+  .menuBurger{
+    width: 20%;
+    margin: 0;
+  }
+}
+@media (max-width: 880px) {
+  .menuBurger{
+    width: 100%;
+  }
 }

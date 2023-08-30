@@ -37,7 +37,9 @@ function App() {
           <div class="card mb-3">
             <div class="card-body">
               <div className="moi">
-
+                <h1 class="fw-bold">Je suis Agbonou Kossiwa Anne Marie</h1>
+                <p>J'aime l'informatique et le developpement web c'est ma passion</p>
+                <a href={photo} download className='btn'> Download CV</a>
               </div>
             </div>
           </div>
