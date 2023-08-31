@@ -19,7 +19,6 @@ body{
   position: fixed;
   color: #FFF;
   width: 14%;
-  border-radius: 2rem;
   margin-left: 11rem;
 }
 .photo{
@@ -38,9 +37,10 @@ body{
 .point{
   color: #FF5959;
   font-size: 2rem;
+
 }
 .sticker i{
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 .sticker{
   margin: 1rem 0;
@@ -51,7 +51,7 @@ body{
 }
 .sticker span{
   margin: 0 1rem;
-  font-weight: bold;
+  font-weight: 200;
   font-size: .9rem;
 }
 .couleur{
@@ -59,8 +59,7 @@ body{
 }
 .moi{
   width: 65%;
-  margin: 10rem auto;
-  background-color: #FF5959;
+  margin: 11.5rem auto;
 }
 .liens{
   display: flex;
@@ -70,11 +69,100 @@ body{
   text-decoration: none;
   color: #FFF;
 }
-
-
-
-
-
+.cadreMoi{
+  background: linear-gradient(100deg, rgba(74, 100, 231, 0.996),
+  rgba(74, 100, 231, 0.756)),url(assets/image/photo.jpeg);
+  background-size: cover;
+  color: #FFF;
+}
+.cadreMoi .btn1{
+  background-color: #FF5959;
+  color: #FFF;
+  margin-right: 1rem;
+  border-radius: 2rem;
+}
+.cadreMoi .btn2{
+  border: 1px solid #FFF;
+  color: #FFF;
+  border-radius: 2rem;
+}
+.btn{
+  padding: .6rem 3rem;
+}
+.card{
+  border-radius: 1rem;
+  border: none;
+}
+.texte{
+  margin: 2rem;
+}
+.orange{
+  width: 4rem;
+  height: 5px;
+  border-radius: 2rem;
+  background-color: #FF5959;
+}
+.texte h1{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.Apropos{
+  padding: 1rem 1rem 0;
+}
+.Apropos .card{
+  border: none;
+}
+.Apropos img{
+  width: 18vh;
+  border-radius: 50%;
+  height: 60%;
+}
+.cardApropos{
+  background-color: #FFF;
+  box-shadow: 5px 5px 20px rgba(128, 128, 128, 0.3);
+  border-radius: 1rem;
+  padding: 2rem 0 4rem 0;
+}
+.btn{
+  padding: .8rem 2rem;
+}
+.Apropos .btn1{
+  background-color: #FF5959;
+  color: #FFF;
+  margin-right: 1rem;
+  border-radius: 2rem;
+}
+.Apropos .btn2{
+  background-color: #4A64E7;
+  color: #FFF;
+  border-radius: 2rem;
+}
+.cardContacts{
+  box-shadow: 5px 5px 20px rgba(128, 128, 128, 0.3);
+}
+.cardSticker h4{
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.cardSticker h4 i{
+  margin-right: 1rem;
+  color: #FF5959;
+}
+.cardSticker p{
+  margin-left: 2rem;
+}
+.cardInput div{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.cardInput div input{
+  width: 47%;
+}
+.cardInput textarea{
+  height: 12vh;
+}
 
 
 @media (max-width: 880px) {
