@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import PortFolio from './pages/portfolio'
 

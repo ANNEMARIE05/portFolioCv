@@ -1,5 +1,7 @@
 import React from "react"
 import photo from '../assets/image/photo.jpeg'
+import bank from '../assets/image/bank.jpg'
+import voyage from '../assets/image/voyage.jpg'
 import '../App.css'
 import { Link } from "react-router-dom"
 
@@ -34,7 +36,7 @@ export default function PortFolio() {
           </div>
         </div>
         <div class="col-sm-6">
-          <div class="card mb-5 cadreMoi">
+          <div class="card mb-4 cadreMoi">
             <div class="card-body">
               <div className="moi">
                 <h1 class="fw-bold">Je suis Agbonou Kossiwa Anne Marie<span className='point'>.</span></h1>
@@ -114,17 +116,162 @@ export default function PortFolio() {
             </div>
           </div>
 
+
           <div class="card mb-3">
             <div class="card-body">
-            <div className="texte">
+              <div className="texte">
+                <h1>Services</h1>
+                <div className="orange"></div>
+              </div>
+              <div class="row cardServices">
+                <div class="col-sm-6 mb-3 mb-sm-0">
+                  <div class="card">
+                    <div class="card-body">
+                      <div className="services mb-5">
+                        <div className="serviceFlex">
+                          <p>Html Css</p>
+                          <p>10%</p>
+                        </div>
+                        <div className="serviceCouleurs">
+                          <div></div>
+                        </div>
+                      </div>
+                      <div className="services mb-5">
+                        <div className="serviceFlex">
+                          <p>Html Css</p>
+                          <p>10%</p>
+                        </div>
+                        <div className="serviceCouleurs">
+                          <div></div>
+                        </div>
+                      </div>
+                      <div className="services">
+                        <div className="serviceFlex">
+                          <p>React</p> 
+                          <p>10%</p>
+                        </div>
+                        <div className="serviceCouleurs">
+                          <div></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-6">
+                  <div class="card">
+                    <div class="card-body">
+                      <div className="services mb-5">
+                        <div className="serviceFlex">
+                          <p>Javascript</p>
+                          <p>10%</p>
+                        </div>
+                        <div className="serviceCouleurs">
+                          <div></div>
+                        </div>
+                      </div>
+                      <div className="services mb-5">
+                        <div className="serviceFlex">
+                          <p>Javascript</p>
+                          <p>10%</p>
+                        </div>
+                        <div className="serviceCouleurs">
+                          <div></div>
+                        </div>
+                      </div>
+                      <div className="services">
+                        <div className="serviceFlex">
+                          <p>Bootstrap</p> 
+                          <p>10%</p>
+                        </div>
+                        <div className="serviceCouleurs">
+                          <div></div>
+                        </div>
+                      </div>
+                      
+                      
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+
+              
+            </div>
+          </div>
+
+          <div class="card mb-3 cardProjet">
+            <div class="card-body ">
+              <div className="texte">
                 <h1>Projets</h1>
                 <div className="orange"></div>
+              </div>
+              <div className="projetRow">
+              <div class="row mb-4">
+                <div class="col-sm-4 mb-3 mb-sm-0">
+                  <div class="card cadreProject">
+                    <img src={voyage} alt="..." />
+                    <div class="card-body">
+                      <h3>Bank</h3>
+                      <p>mon projet</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4 mb-3 mb-sm-0">
+                  <div class="card cadreProject">
+                    <img src={voyage} alt="..." />
+                    <div class="card-body">
+                      <h3>Mondi</h3>
+                      <p>mon projet touristique</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4 mb-3 mb-sm-0">
+                  <div class="card cadreProject">
+                    <img src={bank} alt="..." />
+                    <div class="card-body">
+                      <h3>GuichetBui</h3>
+                      <p>mon projet de banque en collaboration</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row ">
+                <div class="col-sm-4 mb-3 mb-sm-0">
+                  <div class="card cadreProject">
+                    <img src={voyage} alt="..." />
+                    <div class="card-body">
+                      <h3>AgriKAAM</h3>
+                      <p>mon projet</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4 mb-3 mb-sm-0">
+                  <div class="card cadreProject">
+                    <img src={voyage} alt="..." />
+                    <div class="card-body">
+                      <h3>UTB-Ticket</h3>
+                      <p>mon projet</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4 mb-3 mb-sm-0">
+                  <div class="card cadreProject">
+                    <img src={voyage} alt="..." />
+                    <div class="card-body">
+                      <h3>Stream</h3>
+                      <p>mon projet</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
               </div>
             </div>
           </div>
 
 
-          <div class="card mb-3">
+          <div class="card">
             <div class="card-body cardContacts">
                 <div className="texte">
                     <h1>Contacts</h1>
@@ -150,7 +297,7 @@ export default function PortFolio() {
                                     </div>
                                     <input type="email" class="form-control mb-3" id="exampleFormControlInput1" placeholder="Sujet" />
                                     <textarea class="form-control" placeholder="Laissez un commentaire" id="floatingTextarea"></textarea>
-                                    <a href="" download className='btn'><i class="fa-solid fa-paper-plane"></i> Envoyer</a>
+                                    <a href="" className='btn btn-send'><i class="fa-solid fa-paper-plane"></i> Envoyer</a>
                                 </div>
                             </div>
                         </div>
