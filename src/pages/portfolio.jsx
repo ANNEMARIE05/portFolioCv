@@ -5,6 +5,7 @@ import voyage from '../assets/image/voyage.jpg'
 import '../App.css'
 import { Link } from "react-router-dom"
 
+
 export default function PortFolio() {
     return(
         <>
@@ -210,60 +211,78 @@ export default function PortFolio() {
               <div className="projetRow">
               <div class="row mb-4">
                 <div class="col-sm-4 mb-3 mb-sm-0">
-                  <div class="card cadreProject">
-                    <img src={voyage} alt="..." />
-                    <div class="card-body">
-                      <h3>Bank</h3>
-                      <p>mon projet</p>
+                  <a href="https://frontend-hoqz.onrender.com/">
+                    <div class="card cadreProject">
+                      <img src={voyage} alt="..." />
+                      <div class="card-body">
+                        <h3>Bank</h3>
+                        <p>mon projet</p>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
+
                 <div class="col-sm-4 mb-3 mb-sm-0">
-                  <div class="card cadreProject">
-                    <img src={voyage} alt="..." />
-                    <div class="card-body">
-                      <h3>Mondi</h3>
-                      <p>mon projet touristique</p>
+                  <a href="https://finance-frontend-4l7x.onrender.com/">
+                    <div class="card cadreProject">
+                      <img src={voyage} alt="..." />
+                      <div class="card-body">
+                        <h3>Bank</h3>
+                        <p>mon projet</p>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
+
                 <div class="col-sm-4 mb-3 mb-sm-0">
-                  <div class="card cadreProject">
-                    <img src={bank} alt="..." />
-                    <div class="card-body">
-                      <h3>GuichetBui</h3>
-                      <p>mon projet de banque en collaboration</p>
+                  <a href="https://annemarie05.github.io/UTB_ticket/">
+                    <div class="card cadreProject">
+                      <img src={voyage} alt="..." />
+                      <div class="card-body">
+                        <h3>Bank</h3>
+                        <p>mon projet</p>
+                      </div>
                     </div>
-                  </div>
+                  </a>        
                 </div>
+
               </div>
+
               <div class="row ">
                 <div class="col-sm-4 mb-3 mb-sm-0">
-                  <div class="card cadreProject">
-                    <img src={voyage} alt="..." />
-                    <div class="card-body">
-                      <h3>AgriKAAM</h3>
-                      <p>mon projet</p>
+                  <a href="https://annemarie05.github.io/streaming/">
+                    <div class="card cadreProject">
+                      <img src={voyage} alt="..." />
+                      <div class="card-body">
+                        <h3>Bank</h3>
+                        <p>mon projet</p>
+                      </div>
                     </div>
-                  </div>
+                  </a>         
                 </div>
+
                 <div class="col-sm-4 mb-3 mb-sm-0">
-                  <div class="card cadreProject">
-                    <img src={voyage} alt="..." />
-                    <div class="card-body">
-                      <h3>UTB-Ticket</h3>
-                      <p>mon projet</p>
+                  <a href="https://annemarie05.github.io/AgriKAAM/">
+                    <div class="card cadreProject">
+                      <img src={voyage} alt="..." />
+                      <div class="card-body">
+                        <h3>Bank</h3>
+                        <p>mon projet</p>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
+
                 <div class="col-sm-4 mb-3 mb-sm-0">
+                 <a href="https://annemarie05.github.io/Projet-E-commerce-NaN/">
                   <div class="card cadreProject">
-                    <img src={voyage} alt="..." />
-                    <div class="card-body">
-                      <h3>Stream</h3>
-                      <p>mon projet</p>
+                      <img src={voyage} alt="..." />
+                      <div class="card-body">
+                        <h3>Bank</h3>
+                        <p>mon projet</p>
+                      </div>
                     </div>
-                  </div>
+                  </a>          
                 </div>
               </div>
               </div>
