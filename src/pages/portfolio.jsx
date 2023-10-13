@@ -1,8 +1,8 @@
 import React from "react"
 import photo from '../assets/image/photo.jpeg'
-import bank from '../assets/image/bank.jpg'
 import voyage from '../assets/image/voyage.jpg'
 import '../App.css'
+import cv from '../assets/image/cv.pdf'
 import { Link } from "react-router-dom"
 
 
@@ -10,10 +10,10 @@ export default function PortFolio() {
     return(
         <>
      <body>
-      <div class="row cadre">
-        <div class="col-sm-3 mb-3 mb-sm-0 ">
-          <div class="card menuBurger">
-            <div class="card-body">
+      <div className="row cadre">
+        <div className="col-sm-3 mb-3 mb-sm-0 ">
+          <div className="card menuBurger">
+            <div className="card-body">
               <img src={photo} className='rounded-circle photo' alt="" />
               <div className='nom'>
                 <h1>Agbonou Kossiwa Anne Marie <span className='point'>.</span></h1>
@@ -36,50 +36,50 @@ export default function PortFolio() {
             </div>
           </div>
         </div>
-        <div class="col-sm-6">
-          <div class="card mb-4 cadreMoi">
-            <div class="card-body">
+        <div className="col-sm-6">
+          <div className="card mb-4 cadreMoi">
+            <div className="card-body">
               <div className="moi">
-                <h1 class="fw-bold">Je suis Agbonou Kossiwa Anne Marie<span className='point'>.</span></h1>
+                <h1 className="fw-bold">Je suis Agbonou Kossiwa Anne Marie<span className='point'>.</span></h1>
                 <p>J'aime l'informatique et le developpement web c'est ma passion</p>
-                <a href={photo} download className='btn btn1'><i class="fa-solid fa-download"></i> Download CV</a>
+                <a href={cv} download className='btn btn1'><i class="fa-solid fa-download"></i> Download CV</a>
                 <a href="" className="btn btn2"><i class="fa-regular fa-envelope"></i> Engagez moi</a>
               </div>
             </div>
           </div>
 
-            <div class="card mb-3">
-                <div class="card-body cardApropos">
+            <div className="card mb-3">
+                <div className="card-body cardApropos">
                 <div className="texte">
                     <h1>A Propos de moi</h1>
                     <div className="orange"></div>
                 </div>
                 <div className="Apropos">
-                    <div class="row">
-                        <div class="col-sm-3 mb-3 mb-sm-0">
-                            <div class="card">
-                                <div class="card-body">
+                    <div className="row">
+                        <div className="col-sm-3 mb-3 mb-sm-0">
+                            <div className="card">
+                                <div className="card-body">
                                     <img src={photo} />
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-9">
-                            <div class="card">
-                                <div class="card-body">
+                        <div className="col-sm-9">
+                            <div className="card">
+                                <div className="card-body">
                                     <h1>Salut ,</h1>
                                     <p>Je me nomme Agbonou Kossiwa Anne Marie , developpeur web et je vis en Côte d'Ivoire</p>
-                                    <div class="row">
-                                    <div class="col-sm-6 mb-3 mb-sm-0">
-                                        <div class="card">
-                                            <div class="card-body">
+                                    <div className="row">
+                                    <div className="col-sm-6 mb-3 mb-sm-0">
+                                        <div className="card">
+                                            <div className="card-body">
                                                 <p>Nom : <span>Agbonou Kossiwa Anne Marie</span></p>
                                                 <p>Date de naissance : <span> 04 Février 2001</span></p>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-sm-6">
-                                        <div class="card">
-                                            <div class="card-body">
+                                    <div className="col-sm-6">
+                                        <div className="card">
+                                            <div className="card-body">
                                                 <p>Localité : <span>Abidjan</span></p>
                                                 <p>Email : <span>annemarieagbonou@gmail </span></p>
                                             </div>
@@ -89,7 +89,7 @@ export default function PortFolio() {
                                 </div>  
                             </div>
                         
-                            <a href={photo} download className='btn btn1'><i class="fa-solid fa-download"></i> Download CV</a>
+                            <a href={cv} download className='btn btn1'><i class="fa-solid fa-download"></i> Download CV</a>
                             <a href="" className="btn btn2"><i class="fa-regular fa-envelope"></i> Engagez moi</a>
                         </div>
                     </div>
@@ -100,9 +100,44 @@ export default function PortFolio() {
 
             <div class="card mb-3">
             <div class="card-body">
-            <div className="texte">
+              <div className="texte">
                 <h1>Parcours</h1>
                 <div className="orange"></div>
+              </div>
+
+              <div>
+                <div class="row">
+                  <div class="col-sm-3 mb-3 mb-sm-0 pt-4">
+                    <div class="card">
+                      <div class="card-body">
+                        <div>
+                          <p>2022-2023</p>
+                          <p>2021-2022</p>
+                          <p>Aout 2021</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="col-sm-1">
+                    <div class="card">
+                      <div class="card-body">
+                        <div className="hr"></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-7 pt-4">
+                    <div class="card">
+                      <div class="card-body">
+                        <p>Licence 2 a Université Virtuelle de Côte d'Ivoire</p>
+                        <p>Licence 1 a Université Virtuelle de Côte d'Ivoire</p>
+                        <p>Bac D au Lycee municipal de koumassi</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -111,7 +146,7 @@ export default function PortFolio() {
           <div class="card mb-3">
             <div class="card-body">
             <div className="texte">
-                <h1>Services</h1>
+                <h1>Experience</h1>
                 <div className="orange"></div>
               </div>
             </div>
@@ -159,9 +194,9 @@ export default function PortFolio() {
                   </div>
                 </div>
 
-                <div class="col-sm-6">
-                  <div class="card">
-                    <div class="card-body">
+                <div className="col-sm-6">
+                  <div className="card">
+                    <div className="card-body">
                       <div className="services mb-5">
                         <div className="serviceFlex">
                           <p>Javascript</p>
@@ -202,19 +237,19 @@ export default function PortFolio() {
             </div>
           </div>
 
-          <div class="card mb-3 cardProjet">
-            <div class="card-body ">
+          <div className="card mb-3 cardProjet">
+            <div className="card-body ">
               <div className="texte">
                 <h1>Projets</h1>
                 <div className="orange"></div>
               </div>
               <div className="projetRow">
-              <div class="row mb-4">
-                <div class="col-sm-4 mb-3 mb-sm-0">
+              <div className="row mb-4">
+                <div className="col-sm-4 mb-3 mb-sm-0">
                   <a href="https://frontend-hoqz.onrender.com/">
-                    <div class="card cadreProject">
+                    <div className="card cadreProject">
                       <img src={voyage} alt="..." />
-                      <div class="card-body">
+                      <div className="card-body">
                         <h3>Bank</h3>
                         <p>mon projet</p>
                       </div>
@@ -222,11 +257,11 @@ export default function PortFolio() {
                   </a>
                 </div>
 
-                <div class="col-sm-4 mb-3 mb-sm-0">
+                <div className="col-sm-4 mb-3 mb-sm-0">
                   <a href="https://finance-frontend-4l7x.onrender.com/">
-                    <div class="card cadreProject">
+                    <div className="card cadreProject">
                       <img src={voyage} alt="..." />
-                      <div class="card-body">
+                      <div className="card-body">
                         <h3>Bank</h3>
                         <p>mon projet</p>
                       </div>
@@ -234,11 +269,11 @@ export default function PortFolio() {
                   </a>
                 </div>
 
-                <div class="col-sm-4 mb-3 mb-sm-0">
+                <div className="col-sm-4 mb-3 mb-sm-0">
                   <a href="https://annemarie05.github.io/UTB_ticket/">
-                    <div class="card cadreProject">
+                    <div className="card cadreProject">
                       <img src={voyage} alt="..." />
-                      <div class="card-body">
+                      <div className="card-body">
                         <h3>Bank</h3>
                         <p>mon projet</p>
                       </div>
@@ -248,12 +283,12 @@ export default function PortFolio() {
 
               </div>
 
-              <div class="row ">
-                <div class="col-sm-4 mb-3 mb-sm-0">
+              <div className="row ">
+                <div className="col-sm-4 mb-3 mb-sm-0">
                   <a href="https://annemarie05.github.io/streaming/">
-                    <div class="card cadreProject">
+                    <div className="card cadreProject">
                       <img src={voyage} alt="..." />
-                      <div class="card-body">
+                      <div className="card-body">
                         <h3>Bank</h3>
                         <p>mon projet</p>
                       </div>
@@ -261,11 +296,11 @@ export default function PortFolio() {
                   </a>         
                 </div>
 
-                <div class="col-sm-4 mb-3 mb-sm-0">
+                <div className="col-sm-4 mb-3 mb-sm-0">
                   <a href="https://annemarie05.github.io/AgriKAAM/">
-                    <div class="card cadreProject">
+                    <div className="card cadreProject">
                       <img src={voyage} alt="..." />
-                      <div class="card-body">
+                      <div className="card-body">
                         <h3>Bank</h3>
                         <p>mon projet</p>
                       </div>
@@ -273,11 +308,11 @@ export default function PortFolio() {
                   </a>
                 </div>
 
-                <div class="col-sm-4 mb-3 mb-sm-0">
+                <div className="col-sm-4 mb-3 mb-sm-0">
                  <a href="https://annemarie05.github.io/Projet-E-commerce-NaN/">
-                  <div class="card cadreProject">
+                  <div className="card cadreProject">
                       <img src={voyage} alt="..." />
-                      <div class="card-body">
+                      <div className="card-body">
                         <h3>Bank</h3>
                         <p>mon projet</p>
                       </div>
@@ -290,32 +325,32 @@ export default function PortFolio() {
           </div>
 
 
-          <div class="card">
-            <div class="card-body cardContacts">
+          <div className="card">
+            <div className="card-body cardContacts">
                 <div className="texte">
                     <h1>Contacts</h1>
                     <div className="orange"></div>
                 </div>
                 <div className="Apropos">
-                    <div class="row">
-                        <div class="col-sm-3 mb-3 mb-sm-0">
-                            <div class="card">
-                                <div class="card-body cardSticker">
-                                    <div><h4><i class="fa-solid fa-phone"></i>Telephone</h4><p>0768450541</p></div>
-                                    <div><h4><i class="fa-solid fa-envelope"></i>Adresse E-mail</h4><p>annemarieagbonou@gmail.com</p></div>
-                                    <div><h4><i class="fa-solid fa-location-dot"></i>Localité</h4><p>Côte d'Ivoire</p><p>Abidjan - Koumassi</p></div>
+                    <div className="row">
+                        <div className="col-sm-3 mb-3 mb-sm-0">
+                            <div className="card">
+                                <div className="card-body cardSticker">
+                                    <div><h4><i className="fa-solid fa-phone"></i>Telephone</h4><p>0768450541</p></div>
+                                    <div><h4><i className="fa-solid fa-envelope"></i>Adresse E-mail</h4><p>annemarieagbonou@gmail.com</p></div>
+                                    <div><h4><i className="fa-solid fa-location-dot"></i>Localité</h4><p>Côte d'Ivoire</p><p>Abidjan - Koumassi</p></div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-9">
-                            <div class="card">
-                                <div class="card-body cardInput">
+                        <div className="col-sm-9">
+                            <div className="card">
+                                <div className="card-body cardInput">
                                     <div> 
-                                        <input type="email" class="form-control myipt1" id="exampleFormControlInput1" placeholder="Nom & Prenom" />
-                                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email" />
+                                        <input type="email" className="form-control myipt1" id="exampleFormControlInput1" placeholder="Nom & Prenom" />
+                                        <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="Email" />
                                     </div>
-                                    <input type="email" class="form-control mb-3" id="exampleFormControlInput1" placeholder="Sujet" />
-                                    <textarea class="form-control" placeholder="Laissez un commentaire" id="floatingTextarea"></textarea>
+                                    <input type="email" className="form-control mb-3" id="exampleFormControlInput1" placeholder="Sujet" />
+                                    <textarea className="form-control" placeholder="Laissez un commentaire" id="floatingTextarea"></textarea>
                                     <a href="" className='btn btn-send'><i class="fa-solid fa-paper-plane"></i> Envoyer</a>
                                 </div>
                             </div>

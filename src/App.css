@@ -203,6 +203,14 @@ body{
   background-color: #FF5959;
   height: 100%;
 }
+ .hr{
+  width: 1px;
+  height: 17vh;
+  border: 1px dashed #FF5959;
+}
+
+
+
 
 @media (max-width: 880px) {
   .menuBurger{
