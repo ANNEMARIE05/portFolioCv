@@ -1,6 +1,7 @@
 import React from "react"
 import photo from '../assets/image/photo.jpeg'
-import voyage from '../assets/image/voyage.jpg'
+import mondi from '../assets/image/mondi.jpg'
+import bank from '../assets/image/bank.jpg'
 import '../App.css'
 import cv from '../assets/image/cv.pdf'
 import { Link } from "react-router-dom"
@@ -11,7 +12,7 @@ export default function PortFolio() {
         <>
      <body>
       <div className="row cadre">
-        <div className="col-sm-3 mb-3 mb-sm-0 ">
+        <div className="col-sm-3 mb-3 mb-sm-0 cadreHead">
           <div className="card menuBurger">
             <div className="card-body">
               <img src={photo} className='rounded-circle photo' alt="" />
@@ -36,7 +37,7 @@ export default function PortFolio() {
             </div>
           </div>
         </div>
-        <div className="col-sm-6">
+        <div className="col-sm-6 cadreMoiHead">
           <div className="card mb-4 cadreMoi">
             <div className="card-body">
               <div className="moi">
@@ -67,7 +68,11 @@ export default function PortFolio() {
                             <div className="card">
                                 <div className="card-body">
                                     <h1>Salut ,</h1>
-                                    <p>Je me nomme Agbonou Kossiwa Anne Marie , developpeur web et je vis en Côte d'Ivoire</p>
+                                    <p>Je me nomme Agbonou Kossiwa Anne Marie ,etudiante en licence 2 a l'unviversité virtuelle 
+                                      (UVCI) en developpement d'applicatiion et service (DAS) de côte d'Ivoire et je reside a Abidjan 
+                                      Koumassi (Côte d'Ivoire) , developpeur web et je vis en Côte d'Ivoire J'aime l'informatique et 
+                                      le developpement web c'est ma passion
+                                    </p>
                                     <div className="row">
                                     <div className="col-sm-6 mb-3 mb-sm-0">
                                         <div className="card">
@@ -105,50 +110,18 @@ export default function PortFolio() {
                 <div className="orange"></div>
               </div>
 
-              <div>
-                <div class="row">
-                  <div class="col-sm-3 mb-3 mb-sm-0 pt-4">
-                    <div class="card">
-                      <div class="card-body">
-                        <div>
-                          <p>2022-2023</p>
-                          <p>2021-2022</p>
-                          <p>Aout 2021</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-
-                  <div class="col-sm-1">
-                    <div class="card">
-                      <div class="card-body">
-                        <div className="hr"></div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-sm-7 pt-4">
-                    <div class="card">
-                      <div class="card-body">
-                        <p>Licence 2 a Université Virtuelle de Côte d'Ivoire</p>
-                        <p>Licence 1 a Université Virtuelle de Côte d'Ivoire</p>
-                        <p>Bac D au Lycee municipal de koumassi</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
 
 
           <div class="card mb-3">
             <div class="card-body">
-            <div className="texte">
+              <div className="texte">
                 <h1>Experience</h1>
                 <div className="orange"></div>
               </div>
+
+
             </div>
           </div>
 
@@ -166,7 +139,7 @@ export default function PortFolio() {
                       <div className="services mb-5">
                         <div className="serviceFlex">
                           <p>Html Css</p>
-                          <p>10%</p>
+                          <p>80%</p>
                         </div>
                         <div className="serviceCouleurs">
                           <div></div>
@@ -174,8 +147,8 @@ export default function PortFolio() {
                       </div>
                       <div className="services mb-5">
                         <div className="serviceFlex">
-                          <p>Html Css</p>
-                          <p>10%</p>
+                          <p>Bootstrap</p>
+                          <p>60%</p>
                         </div>
                         <div className="serviceCouleurs">
                           <div></div>
@@ -183,8 +156,8 @@ export default function PortFolio() {
                       </div>
                       <div className="services">
                         <div className="serviceFlex">
-                          <p>React</p> 
-                          <p>10%</p>
+                          <p>Javascript</p> 
+                          <p>30%</p>
                         </div>
                         <div className="serviceCouleurs">
                           <div></div>
@@ -198,9 +171,9 @@ export default function PortFolio() {
                   <div className="card">
                     <div className="card-body">
                       <div className="services mb-5">
-                        <div className="serviceFlex">
-                          <p>Javascript</p>
-                          <p>10%</p>
+                      <div className="serviceFlex">
+                          <p>React</p>
+                          <p>60%</p>
                         </div>
                         <div className="serviceCouleurs">
                           <div></div>
@@ -208,8 +181,8 @@ export default function PortFolio() {
                       </div>
                       <div className="services mb-5">
                         <div className="serviceFlex">
-                          <p>Javascript</p>
-                          <p>10%</p>
+                          <p>Word</p>
+                          <p>40%</p>
                         </div>
                         <div className="serviceCouleurs">
                           <div></div>
@@ -217,8 +190,8 @@ export default function PortFolio() {
                       </div>
                       <div className="services">
                         <div className="serviceFlex">
-                          <p>Bootstrap</p> 
-                          <p>10%</p>
+                          <p>Powerpoint</p> 
+                          <p>40%</p>
                         </div>
                         <div className="serviceCouleurs">
                           <div></div>
@@ -245,10 +218,11 @@ export default function PortFolio() {
               </div>
               <div className="projetRow">
               <div className="row mb-4">
-                <div className="col-sm-4 mb-3 mb-sm-0">
-                  <a href="https://frontend-hoqz.onrender.com/">
+
+              <div className="col-sm-4 mb-3 mb-sm-0">
+                  <a href="https://annemarie05.github.io/AgriKAAM/">
                     <div className="card cadreProject">
-                      <img src={voyage} alt="..." />
+                      <img src={mondi} alt="..." />
                       <div className="card-body">
                         <h3>Bank</h3>
                         <p>mon projet</p>
@@ -258,21 +232,23 @@ export default function PortFolio() {
                 </div>
 
                 <div className="col-sm-4 mb-3 mb-sm-0">
-                  <a href="https://finance-frontend-4l7x.onrender.com/">
-                    <div className="card cadreProject">
-                      <img src={voyage} alt="..." />
+                 <a href="https://annemarie05.github.io/Projet-E-commerce-NaN/">
+                  <div className="card cadreProject">
+                      <img src={bank} alt="..." />
                       <div className="card-body">
                         <h3>Bank</h3>
                         <p>mon projet</p>
                       </div>
                     </div>
-                  </a>
+                  </a>          
                 </div>
+
+                
 
                 <div className="col-sm-4 mb-3 mb-sm-0">
                   <a href="https://annemarie05.github.io/UTB_ticket/">
                     <div className="card cadreProject">
-                      <img src={voyage} alt="..." />
+                      <img src={mondi} alt="..." />
                       <div className="card-body">
                         <h3>Bank</h3>
                         <p>mon projet</p>
@@ -287,7 +263,7 @@ export default function PortFolio() {
                 <div className="col-sm-4 mb-3 mb-sm-0">
                   <a href="https://annemarie05.github.io/streaming/">
                     <div className="card cadreProject">
-                      <img src={voyage} alt="..." />
+                      <img src={bank} alt="..." />
                       <div className="card-body">
                         <h3>Bank</h3>
                         <p>mon projet</p>
@@ -297,9 +273,9 @@ export default function PortFolio() {
                 </div>
 
                 <div className="col-sm-4 mb-3 mb-sm-0">
-                  <a href="https://annemarie05.github.io/AgriKAAM/">
+                  <a href="https://frontend-hoqz.onrender.com/">
                     <div className="card cadreProject">
-                      <img src={voyage} alt="..." />
+                      <img src={mondi} alt="..." />
                       <div className="card-body">
                         <h3>Bank</h3>
                         <p>mon projet</p>
@@ -309,15 +285,15 @@ export default function PortFolio() {
                 </div>
 
                 <div className="col-sm-4 mb-3 mb-sm-0">
-                 <a href="https://annemarie05.github.io/Projet-E-commerce-NaN/">
-                  <div className="card cadreProject">
-                      <img src={voyage} alt="..." />
+                  <a href="https://finance-frontend-4l7x.onrender.com/">
+                    <div className="card cadreProject">
+                      <img src={mondi} alt="..." />
                       <div className="card-body">
                         <h3>Bank</h3>
                         <p>mon projet</p>
                       </div>
                     </div>
-                  </a>          
+                  </a>
                 </div>
               </div>
               </div>
