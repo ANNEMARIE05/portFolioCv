@@ -198,8 +198,33 @@ body{
   display: flex;
   justify-content: space-between;
 }
-.serviceCouleurs div{
+.serviceCouleurs .couleur1{
+  width: 80%;
+  background-color: #FF5959;
+  height: 100%;
+}
+.serviceCouleurs .couleur2{
   width: 70%;
+  background-color: #FF5959;
+  height: 100%;
+}
+.serviceCouleurs .couleur3{
+  width: 30%;
+  background-color: #FF5959;
+  height: 100%;
+}
+.serviceCouleurs .couleur4{
+  width: 60%;
+  background-color: #FF5959;
+  height: 100%;
+}
+.serviceCouleurs .couleur5{
+  width: 50%;
+  background-color: #FF5959;
+  height: 100%;
+}
+.serviceCouleurs .couleur5{
+  width: 50%;
   background-color: #FF5959;
   height: 100%;
 }
@@ -213,8 +238,18 @@ body{
   height: 10vh;
   border: 1px dashed #FF5959;
 }
-
-
+.monCardProjet img{
+  height: 10vh;
+  width: 100%;
+}
+.monCardProjet  a{
+  text-decoration: none;
+  color: #FFF;
+}
+.monCardProjet {
+  background-color: #4A64E7;
+  color: #FFF;
+}
 @media (max-width: 880px) {
   .menuBurger{
     position: relative;
@@ -227,6 +262,7 @@ body{
     width: 100%;
   }
 }
+
 @media (max-width: 1860px) {
   .menuBurger{
     margin-left: 9rem;
